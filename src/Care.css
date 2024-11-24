@@ -1,0 +1,111 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the care page */
+.care-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4; /* Ensure no vertical background */
+    padding: 0; /* Remove unnecessary padding */
+}
+
+/* Styling the content of the care page */
+.care-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+/* Left Section - Prediction Result */
+.care-left {
+    flex: 1;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.care-left h2 {
+    color: #2c3e50;
+}
+
+.care-left .result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.care-left .result-diabetic {
+    color: #ff4b5c;
+}
+
+.care-left .result-not-diabetic {
+    color: #28a745;
+}
+
+/* Right Section - Care Instructions */
+.care-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.care-right h2 {
+    color: #2c3e50;
+}
+
+.care-right .care-instructions {
+    background-color: #f5f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.care-right .care-instructions p {
+    color: #34495e;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Ensure there is no unwanted vertical container or background */
+.care-container {
+    background-color: #f4f4f4; /* Make sure background is uniform */
+    padding: 0;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .care-content {
+        flex-direction: column;
+    }
+
+    .care-left,
+    .care-right {
+        padding: 15px;
+        border-right: none;
+    }
+
+    .care-left {
+        border-bottom: 2px solid #ddd;
+    }
+}
